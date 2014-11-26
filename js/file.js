@@ -12,7 +12,8 @@ $(document).ready(function() {
 		$('.hidden').hide();
 		$('input[name="add-button"]').show();
 	});	
-	
+
+	//counts the amount of clicks and assaigns new projects
 	var count = 1;
 	$('input[name="project-button"]').click(counter);
 
@@ -22,7 +23,15 @@ $(document).ready(function() {
 		$('input[name="project-input"]').val('Project Name');
 
 		return count+=1;
-	}
+	};
 
+	$('input[name="task-input"]').keypress(function(e) {
+		if (e.keyCode == 13) {
+			var value = $('input[name="task-input"]').val();
+			$('.tasks').append('<li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle"> '+value+' </li>')
+			$('input[name="project-input"]').val('Add a new task and press enter');
+
+		}
+	});	
 
 });
