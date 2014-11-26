@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	// add project section
-	var counter = 0
 	
 	// when add project slides down to reveal add project information
 	
@@ -12,17 +11,18 @@ $(document).ready(function() {
 	$('a').click(function() {
 		$('.hidden').hide();
 		$('input[name="add-button"]').show();
-	});
+	});	
+	
+	var count = 1;
+	$('input[name="project-button"]').click(counter);
 
-	$('input[name="project-button"]').click(function(e) {
-		e.preventDefault();
-		var value = $('input[name="project-input"]').val();
-		// value.hide();
-		$('.projects').append('<li class="project">' + value + '</li>');
-		// value.show();
+	function counter() {
+		var value = $('input[name="project-input"]').val();	
+		$('.projects').append('<li class="project"  id="'+count+ '">' + value + '</li>');
 		$('input[name="project-input"]').val('Project Name');
 
-	})
+		return count+=1;
+	}
 
 
 });
