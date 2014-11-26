@@ -7,9 +7,12 @@
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
-	border:1px solid red;
+	/*border:1px solid red;*/
 }
 
+body {
+	background-image: url('../img/congruent_pentagon.png');
+}
 
 h1 {
 	font-family: 'oswald', sans-serif;;
@@ -29,7 +32,7 @@ nav,
 nav {
 	float: left;
 	width: 20%;
-	background-color: grey; 
+	background-color: rgba(219, 226, 216, .8); 
 	/*border: 1px solid green;*/
 }
 
@@ -44,7 +47,7 @@ h2,
 		display: table;
 }
 ul {
-	/*display: table;*/
+	display: table;
 	list-style: none;
 	padding: 0;
 	margin: 0 auto;
@@ -70,7 +73,7 @@ ul {
 
 .add {
 	padding: 1em 0;
-	background-color: green;
+	/*background-color: rgb(177, 246, 203);*/
 }
 
 /*circle-logo in CSS. It fills 50% of the .circle div, and is centered
@@ -92,7 +95,7 @@ h1 {
 .main {
 	float: left;
 	width: 80%;
-	background-image: url('../img/congruent_pentagon.png');
+	/*background-image: url('../img/congruent_pentagon.png');*/
 /*	background-repeat: no-repeat;
 	background-size: cover;*/
 }
@@ -110,21 +113,45 @@ h1 {
 	background-color: rgba(0, 0, 0, .5);
 	text-align: center;
 	color: rgba(255, 255, 255, .5);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px; 
 
 
 	/*border: 1px solid yellow;*/
 
 }
 
-/*.task-sec input[type="submit"] {
-	display: block;
-	padding-left: ;
-}*/
+ul.tasks {
+	width: 75%;
+	border-radius: 
+}
 
+li.task {
+	text-align: center;
+	/*shape of each task li*/
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: .3em 1em;
+	margin-bottom: 1em;
 
- /*styling the entries*/
+	/*color of button*/
+	background-color: rgba(255, 255, 255, .8);
+	border: .2em solid rgb(250, 252, 249);
+	box-shadow: 2px 2px 1px black
+}
 
-.task li {
-	color: yellow;
+/*move delete and checkmark to the edges*/
 
+span.right {
+	float: right;
+}
+
+span.left {
+	float: left;
+}
+
+span.middle {
+	margin: 0em 1em;
 }
