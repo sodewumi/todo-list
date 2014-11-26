@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Todo List</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	<!-- google font -->
-	<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title>ToDo List</title>
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/test.css">
+  <!-- google font -->
+  <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="wrapper">
-	<nav>
-		<div class="circle">
-			<h1>ToDo</h1>
-		</div>
-		
-		<h2>Projects</h2>
-		<ul class="projects">
-			<li class="project">Work</li>
-			<li class="project">Homework</li>
-			<li class="project">Shopping</li>
-			<li class="project">Todo</li>
-			<li class="project">Party List</li>
-		</ul>
+<div id="content">
+  <!--column 1 -->
+  <nav>
+    <div class="circle">
+      <h1>ToDo</h1>
+    </div>
+    
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li class="project">Work</li>
+      <li class="project">Homework</li>
+      <li class="project">Shopping</li>
+      <li class="project">Todo</li>
+      <li class="project">Party List</li>
+    </ul>
+    <div class="add-sec">
+      <div class="hidden">
+        <p><input type="text" name="project-input" value="Project Name"></p>
+        <p>
+          <input type="button" name="project-button" value="Add">
+          <span>cancel</span>
+        </p>
+      </div>
 
-		<p class="add">+ Add New Project</p>
+      <p class="add">+ Add Project</p>
 
-	</nav>
-	<section class="main">
-		<div class="task-sec">
-			<input type="text" name="fillout" value="Add a new task and press enter">
-			<!-- <input type="submit" value="Submit"> -->
-		</div>
-		
-		<ul class="tasks">
-			<li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span> </li>
-			<li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
-			<li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
-		</ul>
+    </div>
+    
+  </nav>
 
-		
-	</section>
+  <!-- column 2 -->
+  <section class="main">
+    <div class="task-sec">
+        <input type="text" name="task-input" value="Add a new task and press enter">
+    </div>
 
-		
+    <ul class="tasks">
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span> </li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span> </li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span> </li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span> </li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
+      <li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle">Lorem ipsum dolor sit amet</span></li>
+    </ul>      
+  </section>
+</div>
 
-	</div>
-	
-	
+  <footer><p>Made by Stella Odewumi</p></footer>
+  
 </body>
 </html>
