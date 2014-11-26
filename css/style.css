@@ -73,7 +73,8 @@ ul {
 
 .add {
 	padding: 1em 0;
-	/*background-color: rgb(177, 246, 203);*/
+	background-color: rgb(233, 252, 223);
+	border-top: 1px solid black;
 }
 
 /*circle-logo in CSS. It fills 50% of the .circle div, and is centered
@@ -139,7 +140,7 @@ li.task {
 	/*color of button*/
 	background-color: rgba(255, 255, 255, .8);
 	border: .2em solid rgb(250, 252, 249);
-	box-shadow: 2px 2px 1px black
+	box-shadow: 2px 2px 1px black;
 }
 
 /*move delete and checkmark to the edges*/
