@@ -18,12 +18,16 @@ $(document).ready(function() {
 	$('input[name="project-button"]').click(counter);
 
 	function counter() {
+		//gets value entered and makes a new project
 		var value = $('input[name="project-input"]').val();	
 		$('.projects').append('<li class="project"  id="'+count+ '">' + value + '</li>');
 		$('input[name="project-input"]').val('Project Name');
 
 		return count+=1;
 	};
+
+
+
 
 	$('input[name="task-input"]').keypress(function(e) {
 		if (e.keyCode == 13) {
@@ -32,6 +36,15 @@ $(document).ready(function() {
 			$('input[name="task-input"]').val('Add a new task and press enter');
 
 		}
+	});	
+
+	//delete placeholder
+	$('input[name="project-input"]').click(function() {
+		$('input[name="project-input"]').val('');
+	});	
+
+	$('input[name="task-input"]').click(function() {
+		$('input[name="task-input"]').val('');
 	});	
 
 	//delete tasks and check
