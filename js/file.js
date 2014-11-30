@@ -28,10 +28,21 @@ $(document).ready(function() {
 	$('input[name="task-input"]').keypress(function(e) {
 		if (e.keyCode == 13) {
 			var value = $('input[name="task-input"]').val();
-			$('.tasks').append('<li class="task"><span class="left">&#x2717</span> <span class="right">&#x2714</span><span class="middle"> '+value+' </li>')
-			$('input[name="project-input"]').val('Add a new task and press enter');
+			$('.tasks').append('<li class="task"><span class="delete">&#x2717</span> <span class="check">&#x2714</span><span class="middle"> '+value+' </li>')
+			$('input[name="task-input"]').val('Add a new task and press enter');
 
 		}
 	});	
+
+	//delete tasks and check
+	$('.tasks').on('click', '.delete', function(e){
+		e.preventDefault(); 
+		$(this).closest('li').remove();
+	});
+
+	$('.tasks').on('click', '.check', function(e){
+		e.preventDefault(); 
+		$(this).closest('li').remove();
+	});
 
 });

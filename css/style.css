@@ -92,12 +92,12 @@ li.task {
     box-shadow: 2px 2px 1px black;
 }
 
-span.right {
+span.check {
     /*move X for delete to the right*/
     float: right;
 }
 
-span.left {
+span.delete {
     /*move checkmark for completed to the left*/
     float: left;
 }
